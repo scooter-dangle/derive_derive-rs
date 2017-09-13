@@ -16,6 +16,6 @@ fn impl_derive(ast: &syn::DeriveInput) -> quote::Tokens {
     let name = &ast.ident;
 
     quote! {
-        impl derive::Derive for #name {}
+        impl ::derive::Derive for #name {}
     }
 }
